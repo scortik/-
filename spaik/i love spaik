@@ -1,0 +1,37 @@
+x=0
+y=0
+def setup():
+    size(600,600)
+    colorMode(HSB,360,100,100)
+def draw():
+    global x,y
+    #fill(y,0,0)
+    #ellipse(300,300,60,60)
+    #fill(0,y,0)
+    #ellipse(200,200,60,60)
+    #fill(0,0,x)
+    #ellipse(120,120,60,60)
+    #fill(x,x,0)
+    #ellipse(245,34,60,60)
+    #fill(0,y,y)
+    #ellipse(45,57,60,60)
+    #fill(x,0,x)
+    #ellipse(108,54,60,60)
+    #fill(0,0,x)
+    #ellipse(250,300,60,60)
+    #fill(0,0,255-x)
+    #ellipse(350,300,60,60)
+    #translate(x,x)
+    #background(211,211,211)
+    #fill(0,0,255-x)
+    #triangle(30,30,30,60,20,40)'
+    #background(x,0,0)
+    #fill(0,0,0)
+    #noStroke()
+    #ellipse(300,300,60,60)
+    img=loadImage('getting-spike-Brawl-Stars-1.jpg')
+    image(img,0,0,600,600)
+    fill(x,0,0)
+    ellipse(x,x,60,60)
+    x=x+1
+    y=y+3
