@@ -1,0 +1,32 @@
+#def setup():
+    #size(600,600)
+#def draw():
+    #global x
+    #background(211)
+    #ellipse(x,x,50,50)
+   # x=x+1
+#def mousePressed():
+    #global x
+    #if mouseButton == LEFT:             
+       #x=0
+x=0
+y=0
+t=0
+q=60
+def setup():
+     size(600,600)
+     frameRate(1)
+def draw():
+     rect(300,180,100,50)
+     #text(u"58",300,300) 
+def mouseClicked():
+    global t,q
+    background(211)
+    if mouseX>300 and mouseX<400 and mouseY>180 and mouseY<230:
+       text(t,300,300)
+       text(q,400,400)
+        #background(random(0,255),random(0,255),random(0,255))
+       t=t+1
+       q=q-1
+ #x=x+1
+ #y=y+1    
