@@ -1,0 +1,59 @@
+x=0
+y=0
+def setup():
+    size(600,600)
+def draw():
+    global x,y
+   if mousePressed:
+        if mousePressed==True:
+            line(pmouseX,pmouseY,mouseX,mouseY)
+   if keyPressed:
+        if key=='w':
+            background(random(0,255),random(0,255),random(0,255))
+            line(pmouseX,pmouseY,mouseX,mouseY)
+        if key=='r':
+            line(pmouseX,pmouseY,x,y)
+            x=x+1
+            y=y-1        
+    # background(211)
+    # global x 
+    # rect(200,200,x,x)
+    # #rect(200,200,y,y)
+    # if keyPressed:
+    #      if key=='g':
+    #         x=x+1
+    #         #background(211)
+    #      if key=='h':
+            #background(211)
+            #x=x-1
+    # if keyPressed:
+    #  if key=='q':
+    #     background(211)
+    #     text('q',300,300)
+    #  if key=='w':
+    #     background(211)
+    #     text('w',300,300)
+    #  if key=='e':
+    #     background(211)
+    #     text('e',300,300)
+    #  if key=='r':
+    #     background(211)
+    #     text('r',300,300)
+    #  if key=='t':
+    #      background(211)
+    #      text('t',300,300)
+    #  if key=='y':
+    #      background(211)
+    #      text('y',300,300)
+    #  if key=='u':
+    #      background(211)
+    #      text('u',300,300)
+    #  if key=='i':
+    #      background(211)
+    #      text('i',300,300)
+    #  if key=='o':
+    #      background(211)
+    #      text('o',300,300)
+    #  if key=='p':
+    #      background(211)
+    #      text('p',300,300)
