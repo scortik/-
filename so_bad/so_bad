@@ -1,0 +1,24 @@
+y=0
+def setup():
+    size(600,600)
+def draw():
+    global y
+    x=0
+    while x < 600:
+        fill(0)
+        ellipse(x,30,30,30)
+        x=x+30
+    y=y+3
+    if y > 600:
+        noLoop()
+    
+    # global y
+    # x=0
+
+    # while x < 600:
+    #     fill(random(100,250),random(100,250),random(100,250),random(100,250))
+    #     rect(y,x,30,30)
+    #     x=x+30
+    # y=y+3
+    # if y > 600:
+    #     noLoop()
