@@ -1,0 +1,41 @@
+# x=0
+# y=0
+# def setup():
+#     size(600,600)
+# def draw():
+#     rect(150,150,150,150)
+#     rect(300,300,150,150)
+#     if mousePressed == True:
+#         if mouseButton == LEFT:
+#             global x,y
+#             x=0
+#             while x < width:
+#                 fill(random(100,255),random(100,255),random(100,255))
+#                 rect(x,0,30,30)
+#                 x=x+30
+#     if mousePressed == True:
+#         if mouseButton == RIGHT:
+#             y =0
+#             translate(0,550)
+#             while y < width:
+#                 fill(random(100,255),random(100,255),random(100,255))
+#                 ellipse(y,0,30,30)
+#                 y=y+30
+x=250
+y=0
+def setup():
+    size(600,600)
+def draw():
+    global x
+    background(0,0,205)
+    fill(186, 85, 211)
+    ellipse(300,300,60,60)
+    fill(255, 140, 0)
+    ellipse(300,300,30,30)
+    if keyPressed:
+        if key == 'w' or key == 'ц':
+            for x in range(300,600,5):
+                strokeWeight(5)
+                point(x,0)
+        #if key == 'e' or key 'у':
+            #for 
