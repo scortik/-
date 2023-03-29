@@ -1,0 +1,23 @@
+def setup():
+    size(600,600)
+def draw():
+    frazi = [u"bobik",u"go",u"want"]
+    for x in range(len(frazi)): 
+        text(frazi[x],20,20)
+        translate(50,0)
+# def mouseClicked(): 
+#     frazi = [u"bobik",u"go",u"want"]
+#     global x
+#     text(frazi[x],100,100)
+def mouseClicked():
+    background(0,34,234)
+    frazi = [u"bobik",u"go",u"want"]
+    global x
+    text(frazi[x],200,200)
+    x=x+1
+# def mouseClicked():
+#     frazi = [u"bobik",u"go",u"want"]
+#     global x
+#     x=x+2
+#     text(frazi[x],300,300)
+    
