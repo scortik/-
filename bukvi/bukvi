@@ -1,0 +1,29 @@
+def setup():
+    size(600,600)
+def draw():
+    push()
+    fill(0,0,255)
+    pop()
+    rect(50,50,50,50)
+    translate(50,0)
+    rect(50,50,50,50)
+    translate(50,0)
+    rect(50,50,50,50)
+    bukvi=[ "x","o","d"]
+    if keyPressed:
+        if key == 'x':
+            for x in range(len(bukvi)):
+                if bukvi[x] == "x":
+                    text(bukvi[x],50,50)
+        if bukvi[1] == "o":
+            if keyPressed:
+                if key == "o":
+                    for x in range(len(bukvi)):
+                        text(bukvi(1),50,50)
+                        translate(50,0)
+        if bukvi[2] == "d":
+            if keyPressed:
+                if key == "d":
+                    for x in range(len(bukvi)):
+                        text(bukvi(2),50,50)
+                        translate(50,0)
