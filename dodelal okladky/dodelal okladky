@@ -1,0 +1,32 @@
+# print("Здравствуйте.")
+# name = input("Какое у вас имя?> ")
+# secondName = input("Здравствуйте, какое у вас отчество?> ")
+# city = input("Здравствуйте, из какого вы города?> ")
+# print("Здравствуй", end=' ')
+# print(name, end=' ')
+# print(secondName, end=' ')
+# print("из города", end=' ')
+# print(city, end=' ')
+
+# year1 = int(input("Введите год начала обучения: "))
+# year2 = int(input("Введите год окончания обучения: "))
+# print("Обучался:"  + str(year1) + "-" + str(year2) )
+
+# lojki = float(input("Введите количество ложек: "))
+# litryVody= lojki * 0.5
+# print("Нужно добавить", litryVody, "литров воды")
+
+# t=input("сколько у нас мандаринов?\n")
+# x=input("сколько всего школьниов? \n")
+# t=int(t)
+# x = int(x)
+# n=int(t/x)
+# n=int(n)
+# print(n)
+# print("столько мандаринов у нас осталось")
+
+x=float(input("Введите число \n"))
+y=float(input("Введи второе число \n"))
+
+g=x-y
+print(g)
