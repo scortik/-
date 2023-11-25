@@ -1,0 +1,27 @@
+import pyautogui as pg
+import time as t
+import keyboard as kb
+
+
+x=input("Скажите пожалуйста какую папку вам открыть?\n")
+if x=='1':
+    t.sleep(2)
+    pg.hotkey("winleft","d")
+    t.sleep(2)
+    pg.moveTo(680, 730)
+    pg.doubleClick()
+    t.sleep(2)
+    kb.write("hfpevty kb z?") 
+    t.sleep(2)
+    pg.press("enter")
+
+if x=='2':
+    t.sleep(2)
+    pg.hotkey("winleft","d")
+    t.sleep(2)
+    pg.moveTo(680, 730)
+    pg.doubleClick()
+    t.sleep(2)
+    kb.write(" Ckfdf hj,jnfv!,") 
+    t.sleep(2)
+    pg.press("enter")
