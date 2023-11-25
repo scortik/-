@@ -1,0 +1,25 @@
+import pyautogui as pg
+import time as t
+import keyboard as kb
+
+
+x=input("Во сколько у вас завтра прием у стоматолага?\n")
+if x=='8:00':
+    t.sleep(2)
+    pg.hotkey("winleft","d")
+    t.sleep(2)
+    pg.moveTo(680, 730)
+    pg.doubleClick()
+    t.sleep(2)
+    kb.write("Завтра в 8") 
+    t.sleep(2)
+    pg.press("enter")
+    t.sleep(2)
+    pg.moveTo(30,30)
+    pg.doubleClick()
+    t.sleep(2)
+    pg.moveTo(30,130)
+    pg.doubleClick()
+    t.sleep(2)
+    pg.moveTo(400,400)
+    pg.doubleClick()
