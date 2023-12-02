@@ -1,0 +1,54 @@
+# import pyautogui as pg
+# import time as t
+# import keyboard as kb
+# 
+# 
+# x=input("какой из трех файлов вам открыть?\n")
+# x=int(x)
+# if x==2:
+#     t.sleep(2)
+#     pg.hotkey("winleft","d")
+#     t.sleep(2)
+#     pg.moveTo(600, 460)
+#     pg.doubleClick()
+#     t.sleep(2)
+#     t.sleep(2)
+#     pg.hotkey("ctrl","a")
+#     t.sleep(2)
+#     pg.hotkey("ctrl","c")
+#     t.sleep(2)
+#     pg.hotkey("alt","f4")
+#     t.sleep(2)
+#     pg.moveTo(700, 460)
+#     pg.doubleClick()
+#     t.sleep(2)
+#     pg.hotkey("ctrl","v")
+#     t.sleep(2)
+#     pg.hotkey("alt","f4")
+#     t.sleep(2)
+#     pg.moveTo(580, 390)
+#     pg.doubleClick()
+
+import pyautogui as pg
+import time as t
+import keyboard as kb
+
+
+x=input("Что мне сделать с файлом,удалить(1) или скопировать текст(2)?\n")
+x=int(x)
+if x==1:
+    t.sleep(2)
+    pg.hotkey("winleft","d")
+    t.sleep(2)
+    pg.moveTo(620, 460)
+    pg.click(button="right")
+    t.sleep(2)
+    pg.moveTo(630,395)
+    pg.doubleClick()
+if x==2:
+    t.sleep(1)
+    pg.hotkey("winleft","d")
+    t.sleep(2)
+    pg.moveTo(700, 460)
+    pg.doubleClick()
+    pg.hotkey("ctrl","c")
