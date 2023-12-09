@@ -1,0 +1,59 @@
+x=input("Привет, я чат бот помощник, который поможет тебе найти игры, напишите название игры, и я скажу где ее найти\n")
+if x=="CSGO":
+    print("Чтож, эту игру можно найти в Steam")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Fortnite":
+    print("Эту игру можно скачать в Epic Games Launcher")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Brawl Stars":
+    print("Эту игру можно скачать в Goole Play или же в App Store")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Standoff 2":
+    print("Эту игру можно скачать Google Play или же в App Store")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Minecraft":
+    print("Эту игру можно скачать в Google Play или же в App Store, а если ты играешь на пк, то можно скачать TLAYNCHER в браузере, и играть")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Clash Royle":
+    print("Эту игру можно скачать в Google Play или же в App Store")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Clash of Clans":
+    print("Эту игру можно скачать в Google Play или же в App Store")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Stumble Guys":
+    print("Эту игру можно скачать в Google Play или же в App Store")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Pubg mobile":
+    print("Эту игру можно скачать в  Google Play или же в App Store")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Rust":
+    print("Чтож, эту игру можно найти в Steam")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Cyberpunk 2077":
+    print("Чтож, эту игру можно найти в Steam или же в Epic Games Launcher")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Among Us":
+    print("Чтож, эту игру можно найти в Steam или же в Epic Games Launcher, но если ты игрок с телефона, то её можно скачать в Google Play или же в App Store")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="DOTA 2":
+    print("Чтож, эту игру можно найти в Steam")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+elif x=="Roblox":
+    print("Чтож, эту игру можно найти в  Google Play или же в App Store, но если ты игрок на пк, то её можно скачать с официального сайта Roblox")
+    print("Надеюсь,что я тебе помог")
+    print("Возвращайся к нам ещё")
+else:
+    print("К сожалению, я не нашел такой игры")
