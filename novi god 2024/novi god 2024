@@ -1,0 +1,15 @@
+import pyautogui as pg
+import time as t
+import keyboard as kb
+
+
+x=input("напиши 2024?\n")
+if x=='2024':
+    t.sleep(2)
+    pg.hotkey("winright","d")
+    t.sleep(2)
+    pg.moveTo(570, 760)
+    pg.doubleClick()
+    t.sleep(2)
+    kb.write("с новым годом!!!")
+    kb.write("🎄")
