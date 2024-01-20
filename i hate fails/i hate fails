@@ -1,0 +1,23 @@
+print(str1)
+str1=int(str1)
+f.close()
+print("что мне сделать???")
+x=input("прибавить,отнять или же закрыть файл \n")
+if x=="прибавить":
+    y=input("Введите число которое хотите прибавить \n")
+    y=int(y)
+    n=(str1+y)
+    n=int(n)
+    f = open('data2.txt', 'w', encoding="utf-8")
+    n = input("Введите новый текст файла: ")
+    f.write(n)
+    f.close()
+if x=="отнять":
+    l = 0
+    p=input("Введите число которое хотите отнять \n")
+    p=int(p)
+    l=(str1-p)
+    f = open('data2.txt', 'w', encoding="utf-8")
+    l = input()
+    f.write(l)
+    f.close()
