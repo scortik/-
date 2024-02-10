@@ -1,0 +1,29 @@
+# y=input("введите сумму вашй покупки \n")
+# y=int(y)
+# x=0
+# x=int(x)
+# if y<=1000:
+#     print("скидки нету")
+# elif y>=1000 and y<=5000:
+#     x=(y*5/100)
+#     print("ваша скидка",x)
+# elif y>=5000 and y<=10000:
+#     x=(y*10/100)
+#     print("ваша скидка",x)
+# elif y>=10000:
+#     x=(y*15/100)
+#     print("ваша скидка",x)
+
+y=input("введите действие \n")
+x=input("введите первое число \n")
+p=input("введите второе число \n")
+x=int(x)
+p=int(p)
+if y=="+":
+    print(x+p)
+elif y=="*":
+    print(x*p)
+elif y=="-":
+    print(x-p)
+elif y=="/":
+    print(x/p)
