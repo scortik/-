@@ -1,0 +1,35 @@
+# print("Выберите смешарика: Копатыч, Крош, Ёжик или Пин")
+# smecharik = input("Ваш выбор: ")
+# if smecharik == "Копатыч" or smecharik == "копатыч":
+#     phrase = input("Какая любимая фраза Копатыча? ")
+#     if phrase == "Укуси меня пчела!":
+#         print("Оу!")
+#         print("Бинго!")
+#         print("Вы знаете Копатыча, как свои пять пальцев!")
+#         print("Или как его три")
+#     else:
+#         print("Ну вы чего!")
+#         print("Как можно настолько не знать КУЛЬТОВЫЙ сериал")
+#         print("Такое разочарование")
+# elif smesharik == "Крош" or smecharik == "крош":
+#     phrase = input("Какая любимая фраза Кроша? ")
+#     if phrase == "Ёлки-иголки":
+#         print("Ёлки-иголки!")
+#         print("ГОООООЛ!")
+
+f = open("data.txt","r", encoding="utf-8")
+mode = f.readline().strip()
+f.close()
+print("Режим сейчас:", mode)
+action = input("Переключить тумблер?: ")
+if action == "да" or action == "Да": 
+    if mode == "обогрев":
+        mode = "охлаждение"
+        print("Включён режим «охлаждение»")
+    elif  mode == "охлаждение":
+        mode = "обогрев"
+        print("Включён режим «обогрев»")
+        
+    f = open("data.txt","w")
+    f.write(mode)
+    f.close()
