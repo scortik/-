@@ -1,0 +1,15 @@
+import os
+f = open('data.txt', 'w', encoding="utf-8")
+str2 = input("Что вы хотите сделать??? открыть файл, заменить текст, показать текст \n")
+while str2!="стоп":
+    if str2=="открыть файл":
+        os.startfile("data.txt")
+    elif str2=="заменить текст":
+        f = open('data.txt', 'w', encoding="utf-8")
+        f.write("Вот новый текст:"+ str2)
+    elif str2=="показать текст":
+        print(line.strip())
+        line = f.readline()
+
+    if str2=="стоп":
+        f.close()
