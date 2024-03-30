@@ -6,10 +6,16 @@ while str2!="стоп":
         os.startfile("data.txt")
     elif str2=="заменить текст":
         f = open('data.txt', 'w', encoding="utf-8")
-        f.write("Вот новый текст:"+ str2)
+        s = input()
+        f.write("Вот новый текст:"+ s)
     elif str2=="показать текст":
-        print(line.strip())
         line = f.readline()
+        while len(line) > 0:
+            print(line.strip())
+            line = f.readline()
 
     if str2=="стоп":
         f.close()
+        
+if str2=="стоп":
+    f.close()
