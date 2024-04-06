@@ -1,0 +1,60 @@
+# import os
+# 
+# str2 = input("Что вы хотите сделать??? открыть файл, заменить текст, показать текст \n")
+# if str2=="открыть файл":
+#     os.startfile("data.txt")
+# if str2=="показать текст":
+#     f = open('data.txt', 'r', encoding="utf-8")
+#     line = f.readline()
+#     while len(line) > 0:
+#         print(line.strip())
+#         line = f.readline()
+#     f.close()
+# while str2!="стоп":
+#     if str2=="заменить текст":
+#         f = open('data.txt', 'w', encoding="utf-8")
+#         s = input()
+#         f.write("Вот новый текст:"+ s)
+#         f.close()
+#     if str2=="стоп":
+#         f.close()
+#         
+# if str2=="стоп":
+#     f.close()
+# r=1
+# r=input("хотите, чтобы я ввел числа от 1 до 10 поочереди??? \n")
+# while r!="стоп":
+#     if r=="да":
+#         print(r)
+#         r=r+1
+
+# i = 10
+# while i >=1:
+#     print(i)
+#     i = i - 1
+# import time
+# import pyautogui
+# time.sleep(2)
+# pyautogui.moveTo(194, 747)
+# time.sleep(1)
+# pyautogui.click()
+# time.sleep(1)
+# pyautogui.moveTo(1074, 16)
+# pyautogui.click()
+import time
+import pyautogui
+
+
+x=input("сколько кликов сделать??? \n")
+x=int(x)
+
+time.sleep(2)
+pyautogui.moveTo(194, 747)
+time.sleep(1)
+pyautogui.click()
+time.sleep(1)
+pyautogui.moveTo(1074, 16)
+pyautogui.click()
+pyautogui.moveTo(315, 260)
+while x!=10:
+    pyautogui.click()
