@@ -1,0 +1,27 @@
+# i = 1
+# import time
+# import pyautogui
+# 
+# 
+# x=input("сколько кликов сделать??? \n")
+# x=int(x)
+# time.sleep(2)
+# pyautogui.moveTo(194, 747)
+# time.sleep(1)
+# pyautogui.click()
+# time.sleep(1)
+# pyautogui.moveTo(1074, 16)
+# pyautogui.click()
+# pyautogui.moveTo(315, 260)
+# time.sleep(1)
+# while i <=x:
+#     pyautogui.click()
+#     i = i + 1
+i=1
+x=1
+while i <=20:
+    x=int(input("сколько весит слиток в кг? \n"))
+    i = i + 1
+    x=int(x)
+    if x<=5:
+        print("легкие веса")
