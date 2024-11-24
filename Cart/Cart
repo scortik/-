@@ -1,0 +1,94 @@
+
+Можешь написать код игра в карты в python pro
+Конечно! Давайте создадим простейшую игру в карты на Python. Мы создадим игру «Пьяница», где две стороны будут поочередно скидывать карты, и победитель будет определяться по значению карты. Для простоты мы будем использовать стандартную колоду из 52 карт.
+
+Вот пример кода:
+
+import random
+
+# Определение классов
+class Card:
+    """Класс для представления одной карты."""
+    suits = ('♠', '♥', '♦', '♣')
+    ranks = ('2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A')
+
+    def __init__(self, suit, rank):
+        self.suit = suit
+        self.rank = rank
+
+    def __repr__(self):
+        return f"{self.rank}{self.suit}"
+
+    def value(self):
+        """Возвращает числовое значение карты для сравнения."""
+        return Card.ranks.index(self.rank)
+
+class Deck:
+    """Класс для представления колоды карт."""
+    def __init__(self):
+        self.cards = [Card(suit, rank) for suit in Card.suits for rank in Card.ranks]
+        random.shuffle(self.cards)
+
+    def draw_card(self):
+        """Возвращает верхнюю карту из колоды."""
+        return self.cards.pop() if self.cards else None
+
+class Player:
+    """Класс для представления игрока."""
+    def __init__(self, name):
+        self.name = name
+        self.hand = []
+
+    def add_card(self, card):
+        """Добавляет карту в руку игрока."""
+        self.hand.append(card)
+
+    def play_card(self):
+        """Игрок раскладывает верхнюю карту."""
+        return self.hand.pop(0) if self.hand else None
+
+def play_game():
+    """Основная функция для игры."""
+    # Создаем колоду и игроков
+    deck = Deck()
+    player1 = Player("Игрок 1")
+    player2 = Player("Игрок 2")
+
+    # Раздаем карты игрокам
+    while deck.cards:
+        player1.add_card(deck.draw_card())
+        player2.add_card(deck.draw_card())
+
+    # Игра
+    rounds = 0
+    while player1.hand and player2.hand:
+        rounds += 1
+        print(f"\nРаунд {rounds}!")
+
+        card1 = player1.play_card()
+        card2 = player2.play_card()
+
+        print(f"{player1.name} играет: {card1}")
+        print(f"{player2.name} играет: {card2}")
+
+        if card1.value() > card2.value():
+            print(f"{player1.name} выиграл раунд!")
+            player1.add_card(card1)
+            player1.add_card(card2)
+        elif card1.value() < card2.value():
+            print(f"{player2.name} выиграл раунд!")
+            player2.add_card(card1)
+            player2.add_card(card2)
+        else:
+            print("Ничья! Каждому игроку по одной карте.")
+            player1.add_card(card1)
+            player2.add_card(card2)
+
+    # Определяем итогового чемпиона
+    if len(player1.hand) > len(player2.hand):
+        print(f"\n{player1.name} выиграл игру!")
+    else:
+        print(f"\n{player2.name} выиграл игру!")
+
+if __name__ == "__main__":
+    play_game()
